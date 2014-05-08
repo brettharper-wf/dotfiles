@@ -1,0 +1,6 @@
+--literal
+--smart-case
+--type-set=handlebars=.handlebars
+--type=python
+--type=ruby
+--type=handlebars
