@@ -1,6 +1,8 @@
 --literal
 --smart-case
 --type-set=handlebars=.handlebars
+--type-set=javascript=.js
 --type=python
 --type=ruby
 --type=handlebars
+--type=javascript
