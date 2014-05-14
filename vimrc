@@ -92,6 +92,7 @@ set noshowmode                         " Hide the default mode text (e.g. -- INS
 set showbreak=↪\
 set synmaxcol=256
 set scrolloff=3
+set clipboard=unnamed
 au BufNewFile,BufRead *.json set ft=javascript
 set pastetoggle=<F3>
 set nofoldenable
