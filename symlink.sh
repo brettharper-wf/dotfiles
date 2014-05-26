@@ -7,6 +7,7 @@
 sudo rm -rf ~/.tmux > /dev/null 2>&1
 sudo rm -rf ~/.zsh-custom > /dev/null 2>&1
 sudo rm -rf ~/.gemrc > /dev/null 2>&1
+sudo rm -rf ~/.ctags > /dev/null 2>&1
 sudo rm -rf ~/.gitignore > /dev/null 2>&1
 sudo rm -rf ~/.gitmodules > /dev/null 2>&1
 sudo rm -rf ~/.gvimrc > /dev/null 2>&1
@@ -46,6 +47,7 @@ ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/dotfiles/ackrc ~/.ackrc
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gemrc ~/.gemrc
+ln -s ~/dotfiles/ctags ~/.ctags
 ln -s ~/dotfiles/psqlrc ~/.psqlrc
 ln -s ~/dotfiles/tigrc ~/.tigrc
 

@@ -210,7 +210,7 @@ let g:rbpt_loadcmd_toggle = 0
 nnoremap <Esc><Esc> :nohlsearch<CR>
 function! RenewTagsFile()
     exe 'silent !rm -rf .ctags'
-    exe 'silent !ctags -a -Rf .ctags --languages=javascript --exclude=.git --exclude=*.min.js --exclude=node_modules 2>/dev/null'
+    exe 'silent !ctags -a -Rf .ctags --languages=javascript,typescript --exclude=.git --exclude="*.min.js" --exclude=node_modules 2>/dev/null'
     exe 'redraw!'
 endfunction
 function! SortLines() range
