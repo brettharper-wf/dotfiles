@@ -40,6 +40,7 @@ NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'JarrodCTaylor/vim-shell-executor'
 NeoBundle 'epeli/slimux'
 NeoBundle 'JarrodCTaylor/vim-qunit-special-blend'
+NeoBundle 'toranb/vim-mocha-special-blend'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'https://github.com/mattn/emmet-vim/'
 NeoBundle 'osyo-manga/vim-over'
@@ -388,7 +389,7 @@ function! InvokeTestMethodByType()
     if filetype == 'python'
         exe ':DjangoTestMethod'
     else
-        exe ':RunSingleQunitTest'
+        exe ':RunSingleMochaTest npm test'
     endif
 endfunction
 
@@ -398,7 +399,7 @@ function! InvokeTestClassByType()
     if filetype == 'python'
         exe ':DjangoTestClass'
     else
-        exe ':RunSingleQunitModule'
+        exe ':RunSingleMochaModule npm test'
     endif
 endfunction
 
@@ -408,6 +409,6 @@ function! InvokeTestFileByType()
     if filetype == 'python'
         exe ':DjangoTestFile'
     else
-        exe ':RunAllQunitTests'
+        exe ':RunSingleMochaModule npm test'
     endif
 endfunction
